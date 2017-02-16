@@ -1,105 +1,219 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-<link rel="stylesheet" type="css" href="style.css">
-<header>
-<h1> <a href="index.html">Wapen Shop</h1>
-</header></a>
-  
-<nav>
-<p>shop</p>
+<title>Schoolhub-index.css</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidenav a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
 
-<ul>
-<li><a href="handgun.html">Hand Gun</a><br /></li>
-<li><a href="messen.html">Messen</a><br /></li>
-<li><a href="bommen.html">Bommen</a><br /></li>
-<li><a href="verdediging.html">Verdediging</a><br/></li>
-<li><a href="overig.html">Overig</a><br /></li>
-</ul>
-
-<p><a href="hoi.html">Dag Aanbieding</a><p>
-
-<img src="http://pngimg.com/upload/assault_rifle_PNG1422.png"
-width="255"height="105">
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-white w3-collapse w3-top" style="z-index:3;width:200px" id="mySidenav" float="left">
+  <div class="w3-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
+    <h3 class="w3-wide"><b>Vakken</b></h3>
+      <a href="javascript:void(0)" class="w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Inloggen</a> 
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <div class="w3-accordion">
+    </div>
+    
+<div class="w3-accordion">
+      <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-text-black" id="myBtn">
+        Wiskunde <i class="fa fa-caret-down"></i>
+      </a>
+      <div id="demoAcc" class="w3-accordion-content w3-padding-large w3-medium">
+        <a href="#">wiskunde A</a>
+        <a href="#">Wiskunde B</a>
+        <a href="#">Wiskunde C</a>
+        <a href="#">Wiskunde D</a>
+      </div>
+    <a href="#">Nederlands</a>
+    <a href="#">Engels</a>
+    <a href="#">Duits</a>
+    <a href="#">Frans</a>
+    <a href="#">Biologie</a>
+    <a href="#">Scheikunde</a>
+    <a href="#">Geschiedenis</a>
+    <a href="#">Economie</a>
+    <a href="#">M&O</a>
+    <a href="#">BO</a>
+    <a href="#">CKV</a>
+    <a href="#">Drama</a>
+    <a href="#">Muziek</a>
+    <a href="#">Maatschapijleer</a>
+    <a href="#">Aarderijksmunde</a>
+    <a href="#">Natuurkunde</a>
+    <a href="#">Informtica</a>
+  </div>
 
 </nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding-24">
+  <span class="w3-left w3-wide">Schooltube</span>
+  <a href="javascript:void(0)" class="w3-right w3-opennav" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
   
-<article>
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Startscherm</p>
+    <p class="w3-right">
 
-<table>
-<tr>
-<td><a href="handgun.html">Hand Gun</a></td>
+      <i class="fa fa-search"></i>
+    </p>
+    
+  </header>
 
-<td><a href="messen.html">Messen</a></td>
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="http://www.merces.nl/portals/0/Afbeeldingen/Pierson%20logo.png" alt="pierson" style="width:100%">
 
-<td><a href="bommen.html">Bommen</a></td>
-</tr> 
+      <p><a href="#jeans" class="w3-btn w3-padding-large w3-large">Categoriën</a></p>
+    </div>
+  </div>
 
-<tr>
-<td><img src="http://img2.wikia.nocookie.net/__cb20130519091344/combatarms/images/6/68/Desert_Eagle.png"
-width="275"height="200"></td>
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>Snelle suggesties</p>
+  </div>
 
-<td><img src="http://pngimg.com/upload/knife_PNG1512.png"
-width="275"height="200"></td>
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://docs.google.com/drawings/d/1SrCBU32JTReV9XJOKfw7DLWicXWv8zhYdE6kmSO_l3Y/pub?w=364&h=20" style="width:100%">
+        <p>Insert hyperlink<br><b>Insert author</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://docs.google.com/drawings/d/1SrCBU32JTReV9XJOKfw7DLWicXWv8zhYdE6kmSO_l3Y/pub?w=364&h=20" style="width:100%">
+        <p>Insert hyperlink image<br><b>Insert author</b></p>
+      </div>
+    </div>
 
-<td><img src="http://vignette2.wikia.nocookie.net/clubpenguin/images/3/3b/Bomb.png/revision/latest?cb=20130116012040"
-width="275"height="200"></td>
-</tr>
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://docs.google.com/drawings/d/1SrCBU32JTReV9XJOKfw7DLWicXWv8zhYdE6kmSO_l3Y/pub?w=364&h=204" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Klassieker</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-btn">Kijk nu </button>
+          </div>
+        </div>
+        <p>Wiskunde voor de brugklas deel 8<br><b>Meneer Bies</b></p>
+      </div>
+   
+   <div class="w3-container">
+        <img src="https://docs.google.com/drawings/d/1SrCBU32JTReV9XJOKfw7DLWicXWv8zhYdE6kmSO_l3Y/pub?w=364&h=20" style="width:100%">
+        <p>Insert hyperlink image<br><b>Insert author</b></p>
+      </div>
+    </div>
+
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://docs.google.com/drawings/d/1SrCBU32JTReV9XJOKfw7DLWicXWv8zhYdE6kmSO_l3Y/pub?w=364&h=20" style="width:100%" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Klassieker</span>
+          </div>
+        </div>
+        <p>Insert hyperlink image<br><b class="w3-text-red">Video van de dag</b></p>
+      </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Feedback</h4>
+        <p>Heb je vragen of ideeën? Mail ons dan nu.</p>
+        <form action="form.asp" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Je naam of leerlingnummer adres" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Je emailadres" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Het onderwerp" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Wat wil je kwijt?" name="Message" required></p>
+          <button type="submit" class="w3-btn-block w3-padding w3-black">Verstuur</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>Leerjaren</h4>
+        <p><a href="#">Vmbo-t/Havo 1, 2</a></p>
+        <p><a href="#">Havo/Atheneum 1, 2</a></p>
+        <p><a href="#">Vmbo-t 3</a></p>
+        <p><a href="#">Vmbo-t 4</a></p>
+        <p><a href="#">Havo 4</a></p>
+        <p><a href="#">Havo 5</a></p>
+        <p><a href="#">Atheneum 4</a></p>
+        <p><a href="#">Atheneum 5</a></p>
+        <p><a href="#">Atheneum 6</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+  
+        <h4>Volg ons ook op:</h4>
+        <i class="fa fa-facebook-official w3-xlarge w3-hover-text-indigo"></i>
+        <i class="fa fa-instagram w3-xlarge w3-hover-text-purple"></i>
+        <i class="fa fa-twitter w3-xlarge w3-hover-text-light-blue"></i>
+        <i class="fa fa-pinterest w3-xlarge w3-hover-text-red"></i>
+        <i class="fa fa-flickr w3-xlarge w3-hover-text-blue"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End page content -->
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-padding-jumbo">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-closebtn w3-xlarge w3-hover-text-grey w3-margin"></i>
+      <h2 class="w3-wide">Inloggen</h2>
+      <p><input class="w3-input w3-border" type="text" placeholder="e-mail"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="wachtwoord"></p>
+      <button type="button" class="w3-btn w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Inloggen</button>
+      <button type="button" class="w3-btn w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Registreer</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
 
 
-<tr>
-<td><a href="verdediging.html">verdediging</a></td>
-
-<td><a href="hoi.html">Dag Aanbieding</a></td>
-
-<td><a href="overig.html">Overig</a></td>
-</tr>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
  
-<tr>
-<td><img src="http://toplinearmor.com/images/stories/virtuemart/product/trv-front-view-600x788pxl.png"
-width="200"height="250"></td>
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
-<td><img src="http://pngimg.com/upload/assault_rifle_PNG1422.png"
-width="300"height="170"></td>
-
-<td><img src="http://vignette3.wikia.nocookie.net/slushinvaders/images/4/4c/Pokeball.png/revision/20131120052728"
-width="275"height="200"></td>
-</tr>
-</table>
-
-</article>
-
-<footer> 
-<form>
-<br>Als u wilt doneren aan de site dan kan dat<br>
-<br>Bank<br>
-<form action="donatie.html">
-  <select name="bank">
-    <option value="ABN AMBRO">ABN AMBRO</option>
-    <option value="ING">ING</option>
-    <option value="SNS Bank">SNS Bank</option>
-    <option value="Aegon">Aegon</option>
-  </select>
-  <br> 
-</form>
-
-<form>
-<br>First Name<br>
-<input type="text" name="Firstname">
-<br>
-<br>Last Name<br>
-<input type="text" name="lastname">
-<br>
-<br>Bedrag<br>
-<input type="text" name="lastname">
-<br>
-
-<input type="button" onclick="location.href='donatie.html';" value="doneer" />
-
-</footer>
-
-</main>
-</form>
 </body>
 </html>
